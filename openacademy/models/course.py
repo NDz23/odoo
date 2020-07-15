@@ -12,7 +12,6 @@ class Course(models.Model):
         ondelete='set null', string="Responsible", index=True)
     session_ids = fields.One2many(
         'openacademy.session', 'course_id', string="Sessions")
-    attendee_ids = fields.Many2many('res.partner', string="Attendees")
 
 class Session(models.Model):
     _name = 'openacademy.session'
