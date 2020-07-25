@@ -12,7 +12,7 @@
     """,
 
     'author': "Nelson Díaz",
-    'website': "http://www.yourcompany.com",
+    'website': "https://github.com/NDz23/odoo",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -21,7 +21,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'board'],
 
     # always loaded
     'data': [
@@ -30,6 +30,7 @@
         'views/course.xml',
         'views/session.xml',
         'views/partner.xml',
+        'views/wizard.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
